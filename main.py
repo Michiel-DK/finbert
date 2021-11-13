@@ -14,7 +14,7 @@ nltk.download('punkt')
 app = Flask(__name__)
 CORS(app)
 start = int(round(time.time()))
-model = BertForSequenceClassification.from_pretrained('/src/models/classifier_model/finbert-sentiment', num_labels=3, cache_dir=None)
+model = BertForSequenceClassification.from_pretrained('/src/models/sentiment/', num_labels=3, cache_dir=None)
 
 @app.route("/",methods=['POST'])
 def score():

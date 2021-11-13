@@ -1,4 +1,4 @@
-from pytorch/pytorch:latest
+FROM pytorch/pytorch:latest
 
 RUN pip install pytorch_pretrained_bert numpy pandas nltk Flask flask-cors transformers
 
