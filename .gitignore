@@ -35,3 +35,5 @@ venv.bak/
 #pycharm
 workspace.xml
 models/
+
+*pretrained*
